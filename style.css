@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Regular.eot');
+    src: url('Vazir-Regular.eot?#iefix') format('embedded-opentype'), url('Vazir-Regular.woff2') format('woff2'), url('Vazir-Regular.woff') format('woff'), url('Vazir-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Bold.eot');
+    src: url('Vazir-Bold.eot?#iefix') format('embedded-opentype'), url('Vazir-Bold.woff2') format('woff2'), url('Vazir-Bold.woff') format('woff'), url('Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Black.eot');
+    src: url('Vazir-Black.eot?#iefix') format('embedded-opentype'), url('Vazir-Black.woff2') format('woff2'), url('Vazir-Black.woff') format('woff'), url('Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Medium.eot');
+    src: url('Vazir-Medium.eot?#iefix') format('embedded-opentype'), url('Vazir-Medium.woff2') format('woff2'), url('Vazir-Medium.woff') format('woff'), url('Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Light.eot');
+    src: url('Vazir-Light.eot?#iefix') format('embedded-opentype'), url('Vazir-Light.woff2') format('woff2'), url('Vazir-Light.woff') format('woff'), url('Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Thin.eot');
+    src: url('Vazir-Thin.eot?#iefix') format('embedded-opentype'), url('Vazir-Thin.woff2') format('woff2'), url('Vazir-Thin.woff') format('woff'), url('Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: ;
+}
+
+body {
+    width: 95%;
+    direction: rtl;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 0 0 0;
+}
+
+.nav-logo-text {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-text {
+    font-size: 2em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.nav-circle {
+    background-color: #FFFFFFCC;
+    transition: all 200ms ease;
+    padding: 12px 2px 12px 14px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #4A148C;
+    border-radius: 500px 500px 500px 500px;
+    margin: 0 auto;
+}
