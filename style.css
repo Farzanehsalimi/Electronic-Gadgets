@@ -1,56 +1,18 @@
-@font-face {
-    font-family: Vazir;
-    src: url('Vazir-Regular.eot');
-    src: url('Vazir-Regular.eot?#iefix') format('embedded-opentype'), url('Vazir-Regular.woff2') format('woff2'), url('Vazir-Regular.woff') format('woff'), url('Vazir-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Vazir;
-    src: url('Vazir-Bold.eot');
-    src: url('Vazir-Bold.eot?#iefix') format('embedded-opentype'), url('Vazir-Bold.woff2') format('woff2'), url('Vazir-Bold.woff') format('woff'), url('Vazir-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Vazir;
-    src: url('Vazir-Black.eot');
-    src: url('Vazir-Black.eot?#iefix') format('embedded-opentype'), url('Vazir-Black.woff2') format('woff2'), url('Vazir-Black.woff') format('woff'), url('Vazir-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Vazir;
-    src: url('Vazir-Medium.eot');
-    src: url('Vazir-Medium.eot?#iefix') format('embedded-opentype'), url('Vazir-Medium.woff2') format('woff2'), url('Vazir-Medium.woff') format('woff'), url('Vazir-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Vazir;
-    src: url('Vazir-Light.eot');
-    src: url('Vazir-Light.eot?#iefix') format('embedded-opentype'), url('Vazir-Light.woff2') format('woff2'), url('Vazir-Light.woff') format('woff'), url('Vazir-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Vazir;
-    src: url('Vazir-Thin.eot');
-    src: url('Vazir-Thin.eot?#iefix') format('embedded-opentype'), url('Vazir-Thin.woff2') format('woff2'), url('Vazir-Thin.woff') format('woff'), url('Vazir-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: ;
+    font-family: Vazir;
+}
+
+:root {
+    --primaryColor: #4A148C;
+    ;
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --mainGreen: #f8faf9;
+    --mainBlue: #f8f9fb;
+    --gradient-background: linear-gradient(to left, #25c1e9, #556ff8);
 }
 
 body {
@@ -63,7 +25,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 2rem 0 0 0;
+    margin: 2.6rem 0 0 0;
 }
 
 .nav-logo-text {
@@ -73,12 +35,12 @@ body {
 }
 
 .nav-logo {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 
 .nav-text {
-    font-size: 2em;
+    font-size: 1.9em;
 }
 
 ul {
@@ -87,28 +49,123 @@ ul {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 2rem;
+    gap: 2.4rem;
+}
+
+ul a {
+    color: var(--mainBlack);
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 1.1em;
 }
 
 .nav-icons {
     display: flex;
-    gap: 1rem;
+    gap: .05rem;
     align-items: center;
     justify-content: center;
-}
-
-.search-icon {
-    width: 25px;
-    height: 25px;
 }
 
 .nav-circle {
     background-color: #FFFFFFCC;
     transition: all 200ms ease;
-    padding: 12px 2px 12px 14px;
+    padding: 9px 12px 6px 12px;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     border-color: #4A148C;
     border-radius: 500px 500px 500px 500px;
     margin: 0 auto;
+}
+
+.nav-circle:hover {
+    color: var(--mainWhite);
+    cursor: pointer;
+    background-color: #4A148C;
+}
+
+.search-icon-circle {
+    background-color: var(--mainWhite);
+    transition: all 200ms ease;
+    padding: 8px 8px 8px 8px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var(--mainWhite);
+    border-radius: 500px 500px 500px 500px;
+    margin-left: 14px;
+}
+
+.search-icon-circle:hover {
+    background-color: var(--primaryColor);
+    transition: all 200ms ease;
+    padding: 8px 8px 8px 8px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #4A148C;
+    border-radius: 500px 500px 500px 500px;
+    cursor: pointer;
+}
+
+.search-icon {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    color: #4A148C;
+}
+
+.search-icon:hover {
+    color: var(--mainWhite);
+}
+
+.person-icon {
+    width: 19px;
+    height: 19px;
+    color: #4A148C;
+    margin-top: 2px;
+}
+
+.person-icon:hover {
+    color: var(--mainWhite);
+}
+
+.amount {
+    position: relative;
+    position: relative;
+    right: 52px;
+    bottom: 16px;
+    color: var(--mainWhite);
+    background-color: rgba(89, 86, 233, 1);
+    border-radius: 5px 5px 0px 5px;
+    padding: 0px 3px 0px 3px;
+    font-size: .9em;
+}
+
+.amount:hover {
+    color: var(--mainWhite);
+    background-color: rgba(89, 86, 233, 1);
+    border-radius: 5px 5px 0px 5px;
+    padding: 0px 3px 0px 3px;
+    cursor: pointer;
+}
+
+.heart-icon {
+    width: 19px;
+    height: 19px;
+    color: #4A148C;
+    margin: 2px 0 0 0;
+    margin-top: 2px;
+}
+
+.heart-icon:hover {
+    color: var(--mainWhite);
+}
+
+.shop-icon {
+    width: 19px;
+    height: 19px;
+    color: #4A148C;
+    margin-top: 2px;
+}
+
+.shop-icon:hover {
+    color: var(--mainWhite);
 }
