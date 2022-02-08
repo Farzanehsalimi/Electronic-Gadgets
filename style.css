@@ -270,6 +270,7 @@ aside>h1 {
     top: 130px;
     left: -45px;
     font-size: 18px;
+    font-weight: 300;
 }
 
 #design {
@@ -277,6 +278,7 @@ aside>h1 {
     top: 73px;
     left: 129px;
     font-size: 18px;
+    font-weight: 300;
 }
 
 #back-forward {
@@ -284,19 +286,58 @@ aside>h1 {
     top: 152px;
     left: 564px;
     font-size: 18px;
+    font-weight: 300;
 }
 
 .pro-btn {
     position: fixed;
+    top: 595px;
+    left: 1150px;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
     border: 0;
     color: var(--mainWhite);
     background-color: var(--mainBlack);
-    border-radius: 10px;
-    font-size: 1.5em;
-    padding: .5rem .5rem;
+    border-radius: 20px;
+    font-size: 1.1em;
+    padding: .3rem .5rem;
+    z-index: 33;
+    cursor: pointer;
+}
+
+.pro-btn:hover {
+    background-color: #7ad03a;
+    transition: .8s;
 }
 
 .pro-btn-svg {
-    width: 1.5rem;
+    width: 25px;
+    height: 25px;
     color: var(--mainWhite);
+}
+
+.devices-navbar {
+    direction: ltr;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+    cursor: pointer;
+}
+
+.devices-img:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.devices-navbar-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1em;
+}
+
+.lorem {
+    margin-top: 100rem;
 }
