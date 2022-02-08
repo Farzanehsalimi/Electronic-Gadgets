@@ -23,7 +23,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin-top: 2.8rem;
+    margin-top: 3rem;
 }
 
 .logo-all {
@@ -116,7 +116,165 @@ header {
     display: flex;
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;
-    margin-top: 8rem;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+aside {
+    margin-top: 6rem;
+}
+
+aside>h1 {
+    font-size: 60px;
+    line-height: 1.4em;
+    text-align: end;
+}
+
+#mouse-text {
+    color: rgb(112, 111, 111);
+    text-align: end;
+    font-size: 1.1em;
+    margin: 1.2rem 0 1.8rem 0;
+}
+
+#money {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 2rem 2.2rem 0rem 0rem;
+}
+
+#mouse {
+    font-size: 34px;
+    font-weight: 400;
+    color: rgb(110 109 109);
+}
+
+.two-btn-header {
+    display: flex;
+    gap: .8rem;
+    margin-top: 2rem;
+}
+
+.shop-btn {
+    border: 0;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+    width: 240px;
+    line-height: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 14px 20px;
+    border-radius: 120px;
+    box-shadow: rgb(74 20 140 / 18%) 0px 3px 5px 0px;
+    cursor: pointer;
+}
+
+.shop-btn:hover {}
+
+.next-btn {
+    background-color: var(--mainWhite);
+    color: var(--primaryColor);
+    border: 1px solid #4A148C;
+    border-radius: 120px;
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.mouse-all {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.nested-circles {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40rem;
+    height: 40rem;
+}
+
+.mouse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    margin: 10rem 0 0 5rem;
+}
+
+.purple-shadow {
+    position: absolute;
+    top: 415px;
+    left: 60px;
+    width: 75%;
+}
+
+.light-purple {
+    position: absolute;
+    top: 430px;
+    left: 0;
+    width: 9%;
+}
+
+.bold-purple {
+    position: absolute;
+    top: 466px;
+    left: 465px;
+    width: 26%;
+}
+
+.blue-circle {
+    position: absolute;
+    top: 30px;
+    left: 490px;
+    width: 13%;
+}
+
+.right-arrow-1 {
+    position: absolute;
+    top: 148px;
+    left: 50px;
+    z-index: 20;
+    width: 25.5%;
+}
+
+.right-arrow-2 {
+    position: absolute;
+    top: 99px;
+    left: 212px;
+    width: 25.5%;
+    z-index: 30;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 168px;
+    left: 441px;
+    z-index: 32;
+    width: 20%;
+}
+
+#scroll {
+    position: absolute;
+    top: 130px;
+    left: -45px;
+    font-size: 18px;
+}
+
+#design {
+    position: absolute;
+    top: 73px;
+    left: 129px;
+    font-size: 18px;
+}
+
+#back-forward {
+    position: absolute;
+    top: 152px;
+    left: 564px;
+    font-size: 18px;
 }
 
 .pro-btn {
