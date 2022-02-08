@@ -169,7 +169,10 @@ aside>h1 {
     cursor: pointer;
 }
 
-.shop-btn:hover {}
+.shop-btn:hover {
+    background-color: #250b46;
+    transition: .8s;
+}
 
 .next-btn {
     background-color: var(--mainWhite);
@@ -180,6 +183,12 @@ aside>h1 {
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
+}
+
+.next-btn:hover {
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+    transition: .8s;
 }
 
 .mouse-all {
