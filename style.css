@@ -372,7 +372,6 @@ aside>h1 {
 .countdown {
     display: flex;
     gap: 1.8rem;
-    /* margin: 0 auto; */
 }
 
 span>sub {
@@ -435,6 +434,11 @@ p #demo {
 
 .w-r-sec {
     font-weight: 450;
+    cursor: pointer;
+}
+
+.w-r-sec:hover {
+    color: #5956e9;
 }
 
 .w-price {
