@@ -12,12 +12,41 @@
     --mainBlack: #000;
     --mainGreen: #f8faf9;
     --mainBlue: #f8f9fb;
+    --maingray: #7d7d7d;
 }
 
 body {
     width: 75%;
     direction: rtl;
     margin: 0 auto;
+    position: relative
+}
+
+#translate-parent {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    direction: ltr
+}
+
+#translate-parent button {
+    background-color: dodgerblue;
+    color: white;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none
+}
+
+#translate-parent button:first-child {
+    width: auto;
+    padding: 0 10px;
+    border-radius: 5px;
+    display: inline-block
 }
 
 .navbar {
@@ -60,8 +89,6 @@ ul a {
 
 .nav-icons {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     column-gap: .5rem;
 }
 
@@ -102,7 +129,7 @@ ul a {
 
 .nav-circle .amount {
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
     color: var(--mainWhite);
     background-color: rgba(89, 86, 233, 1);
@@ -131,7 +158,7 @@ aside>h1 {
 }
 
 #mouse-text {
-    color: rgb(112, 111, 111);
+    color: var(--maingray);
     text-align: end;
     font-size: 1.1em;
     margin: 1.2rem 0 1.8rem 0;
@@ -146,7 +173,7 @@ aside>h1 {
 #mouse {
     font-size: 34px;
     font-weight: 400;
-    color: rgb(110 109 109);
+    color: var(--maingray);
 }
 
 .two-btn-header {
@@ -372,7 +399,6 @@ aside>h1 {
 .countdown {
     display: flex;
     gap: 1.8rem;
-    /* margin: 0 auto; */
 }
 
 span>sub {
@@ -430,11 +456,16 @@ p #demo {
 
 .w-r-first {
     font-size: .8em;
-    color: rgb(97, 97, 97);
+    color: var(--maingray);
 }
 
 .w-r-sec {
     font-weight: 450;
+    cursor: pointer;
+}
+
+.w-r-sec:hover {
+    color: #5956e9;
 }
 
 .w-price {
@@ -448,7 +479,7 @@ p #demo {
 }
 
 .w-price del {
-    color: rgb(156, 156, 156);
+    color: var(--maingray);
     text-decoration: line-through;
 }
 
@@ -492,7 +523,7 @@ p #demo {
 }
 
 .p-i-first p {
-    color: rgb(90, 89, 89);
+    color: var(--maingray);
 }
 
 .playing-ideals h2 {
@@ -523,6 +554,74 @@ p #demo {
 
 .p-i-img {
     width: 41rem;
+}
+
+.best-selling {
+    margin: 8rem 0 0 0;
+}
+
+.b-s-nav {
+    display: flex;
+    gap: 15rem;
+}
+
+.b-s-nav h2 {
+    font-size: 1.6em;
+}
+
+.b-s-li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+ul .b-s-li:hover {
+    color: #5956e9;
+}
+
+.b-s-watch {
+    display: flex;
+    direction: ltr;
+    gap: .6rem;
+    margin-top: 1rem;
+}
+
+.b-s-img {
+    width: 15.4rem;
+}
+
+.b-s-watch span {
+    font-size: .85em;
+    color: var(--maingray);
+}
+
+.b-s-star {
+    width: .9rem;
+    color: #ffd980;
+}
+
+.b-s-stars {
+    display: flex;
+    align-items: flex-start;
+    gap: .4rem;
+    margin-top: .5rem;
+}
+
+.b-s-stars p {
+    font-weight: 600;
+    font-size: .8em;
+    opacity: .7;
+}
+
+.b-s-money {
+    font-size: .85em;
+    font-weight: 500;
+    opacity: .8;
+    margin-top: .4rem;
+}
+
+.b-s-money del {
+    color: var(--maingray);
 }
 
 .lorem {
