@@ -575,9 +575,10 @@ p #demo {
     gap: .5rem;
 }
 
-ul .b-s-li:hover {
+
+/* ul .b-s-li:hover {
     color: #5956e9;
-}
+} */
 
 .b-s-watch {
     display: flex;
