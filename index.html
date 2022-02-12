@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./font/">
     <link rel="stylesheet" type="text/css" id="stylesheets" href="./ltrcss.css">
     <link rel="icon" href="./img/1.nav circles/logo/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Electronic Gadgets</title>
 </head>
 
 <body>
     <nav class="navbar">
+
         <div class="logo-all">
+            <!-- <i class="fa fa-bars nav-ham" style="font-size:36px"></i> -->
+            <i id="nav-ham" class="fa fa-bars" style="font-size:24px"></i>
             <img class="nav-logo" src="./img/1.nav circles/logo/logo.svg" alt="logo">
             <p class="nav-text">تِتا.</p>
         </div>
@@ -35,6 +38,7 @@
                 <a class="lang" href="#" key="PAGES"></a>
             </li>
         </ul>
+
         <section class="nav-icons">
             <div class="nav-circle">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
@@ -62,13 +66,24 @@
                   </svg>
             </div>
         </section>
+
         <div id="translate-parent">
             <button id="show-lang">lang</button>
             <button class="translate english" id="en">En</button>
             <button class="translate persian" id="fa">Fa</button>
         </div>
-    </nav>
 
+    </nav>
+    <div class="pro-btn">
+        <button>
+            خرید <strong>تِتا. پرو </strong>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="pro-btn-svg" viewBox="0 0 16 16">
+           <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z"/>
+         </svg>
+       </button>
+    </div>
+
+    <!-- 
     <header>
         <aside>
             <p id="mouse">ماوس</p>
@@ -99,37 +114,36 @@
         </div>
     </header>
 
-    <button class="pro-btn">
-         خرید <strong>تِتا. پرو </strong>
-         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="pro-btn-svg" viewBox="0 0 16 16">
-        <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z"/>
-      </svg>
-    </button>
+    
 
     <section class="devices-navbar">
-        <div class="devices-navbar-column">
-            <img src="./img/3.devices-navbar/1.smart-watch.svg" class="devices-img" alt="smart-watch">
-            <p>ساعت هوشمند</p>
+        <div class="d-n-aside">
+            <div class="devices-navbar-column">
+                <img src="./img/3.devices-navbar/1.smart-watch.svg" class="devices-img" alt="smart-watch">
+                <p>ساعت هوشمند</p>
+            </div>
+            <div class="devices-navbar-column">
+                <img src="./img/3.devices-navbar/2.smart-phone.svg" class="devices-img" alt="smart-phone">
+                <p>گوشی هوشمند</p>
+            </div>
+            <div class="devices-navbar-column">
+                <img src="./img/3.devices-navbar/3.game-console.svg" class="devices-img" alt="game-console">
+                <p>کنسول بازی</p>
+            </div>
         </div>
-        <div class="devices-navbar-column">
-            <img src="./img/3.devices-navbar/2.smart-phone.svg" class="devices-img" alt="smart-phone">
-            <p>گوشی هوشمند</p>
-        </div>
-        <div class="devices-navbar-column">
-            <img src="./img/3.devices-navbar/3.game-console.svg" class="devices-img" alt="game-console">
-            <p>کنسول بازی</p>
-        </div>
-        <div class="devices-navbar-column">
-            <img src="./img/3.devices-navbar/4.laptop.svg" class="devices-img" alt="laptop">
-            <p>لپ تاپ</p>
-        </div>
-        <div class="devices-navbar-column">
-            <img src="./img/3.devices-navbar/5.headset.svg" class="devices-img" alt="headset">
-            <p>هدست</p>
-        </div>
-        <div class="devices-navbar-column">
-            <img src="./img/3.devices-navbar/6.all-in-one.svg" class="devices-img" alt="all-in-one">
-            <p>کامپیوتر همه کاره</p>
+        <div class="d-n-aside">
+            <div class="devices-navbar-column">
+                <img src="./img/3.devices-navbar/4.laptop.svg" class="devices-img" alt="laptop">
+                <p>لپ تاپ</p>
+            </div>
+            <div class="devices-navbar-column">
+                <img src="./img/3.devices-navbar/5.headset.svg" class="devices-img" alt="headset">
+                <p>هدست</p>
+            </div>
+            <div class="devices-navbar-column">
+                <img src="./img/3.devices-navbar/6.all-in-one.svg" class="devices-img" alt="all-in-one">
+                <p>کامپیوتر همه کاره</p>
+            </div>
         </div>
     </section>
     <section class="weekly">
@@ -342,7 +356,7 @@
 
 
 
-    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa blanditiis velit autem, dolor facilis, debitis possimus excepturi cumque, culpa beatae est veritatis natus sint laborum sapiente consequuntur quas assumenda in.</p>
+    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa blanditiis velit autem, dolor facilis, debitis possimus excepturi cumque, culpa beatae est veritatis natus sint laborum sapiente consequuntur quas assumenda in.</p> -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

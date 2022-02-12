@@ -1,9 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Caveat:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Regular.eot');
+    src: url('Vazir-Regular.eot?#iefix') format('embedded-opentype'), url('Vazir-Regular.woff2') format('woff2'), url('Vazir-Regular.woff') format('woff'), url('Vazir-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Bold.eot');
+    src: url('Vazir-Bold.eot?#iefix') format('embedded-opentype'), url('Vazir-Bold.woff2') format('woff2'), url('Vazir-Bold.woff') format('woff'), url('Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Black.eot');
+    src: url('Vazir-Black.eot?#iefix') format('embedded-opentype'), url('Vazir-Black.woff2') format('woff2'), url('Vazir-Black.woff') format('woff'), url('Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Medium.eot');
+    src: url('Vazir-Medium.eot?#iefix') format('embedded-opentype'), url('Vazir-Medium.woff2') format('woff2'), url('Vazir-Medium.woff') format('woff'), url('Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Light.eot');
+    src: url('Vazir-Light.eot?#iefix') format('embedded-opentype'), url('Vazir-Light.woff2') format('woff2'), url('Vazir-Light.woff') format('woff'), url('Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Thin.eot');
+    src: url('Vazir-Thin.eot?#iefix') format('embedded-opentype'), url('Vazir-Thin.woff2') format('woff2'), url('Vazir-Thin.woff') format('woff'), url('Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Vazir;
+    font-family: 'Vazir', sans-serif;
 }
 
 :root {
@@ -16,7 +64,7 @@
 }
 
 body {
-    width: 75%;
+    max-width: 80%;
     direction: rtl;
     margin: 0 auto;
     position: relative
@@ -24,13 +72,14 @@ body {
 
 #translate-parent {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 2.2rem;
+    left: 1.6rem;
     direction: ltr
 }
 
 #translate-parent button {
-    background-color: dodgerblue;
+    background-color: #ff318b;
+    /* background-color: rgba(89, 86, 233, 1); */
     color: white;
     border: 0;
     width: 30px;
@@ -50,10 +99,9 @@ body {
 }
 
 .navbar {
-    width: 75%;
     display: flex;
-    gap: 10rem;
-    margin-top: 3rem;
+    margin: 0 auto;
+    margin-top: 3.5rem;
 }
 
 .logo-all {
@@ -63,8 +111,8 @@ body {
 }
 
 .nav-logo {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
 .nav-text {
@@ -76,9 +124,14 @@ ul {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 2.4rem;
+    gap: 2.2rem;
     margin: 0 auto;
     list-style: none;
+}
+
+ul li {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 ul a {
@@ -86,6 +139,10 @@ ul a {
     color: var(--mainBlack);
     text-decoration: none;
     transition: .8s;
+}
+
+#nav-ham {
+    display: none;
 }
 
 .nav-icons {
@@ -318,24 +375,26 @@ aside>h1 {
 
 .pro-btn {
     position: fixed;
-    top: 560px;
-    left: 1150px;
+    bottom: 3rem;
+    right: 2rem;
+}
+
+.pro-btn button {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     gap: .3rem;
-    border: 0;
     color: var(--mainWhite);
     background-color: var(--mainBlack);
+    border: 0;
     border-radius: 20px;
-    font-size: 1em;
     padding: .3rem .5rem;
-    z-index: 33;
+    font-size: 1.1em;
     cursor: pointer;
 }
 
-.pro-btn:hover {
-    background-color: #7ad03a;
+.pro-btn button:hover {
+    background-color: #5ea12b;
     transition: .8s;
 }
 
@@ -348,9 +407,13 @@ aside>h1 {
 .devices-navbar {
     direction: ltr;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin-top: 6rem;
     cursor: pointer;
+}
+
+.d-n-aside {
+    display: flex;
 }
 
 .devices-img:hover {
@@ -373,6 +436,8 @@ aside>h1 {
 }
 
 .weekly-left {
+    width: 100%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
@@ -434,8 +499,8 @@ p #demo {
 
 .weekly-right {
     display: flex;
-    width: 85%;
-    height: 100%;
+    width: 100%;
+    height: 70%;
     background-color: #edf2f6;
     border-radius: 10px;
     margin: 6rem 0 0 0;
@@ -717,6 +782,30 @@ p #demo {
     margin-top: 100rem;
 }
 
+@media only screen and (max-width: 1028px) {
+    body {
+        max-width: 95%;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    ul {
+        display: none;
+    }
+    #nav-ham {
+        display: flex;
+    }
+    .nav-text {
+        display: none;
+    }
+    .devices-navbar {
+        flex-direction: column;
+    }
+    .d-n-aside {
+        display: flex;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
 }
@@ -730,34 +819,24 @@ p #demo {
 
 /* Extra small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 600px) {
-    ...
-}
+@media only screen and (max-width: 600px) {}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) {
-    ...
-}
+@media only screen and (min-width: 600px) {}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 768px) {
-    ...
-}
+@media only screen and (min-width: 768px) {}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {
-    ...
-}
+@media only screen and (min-width: 992px) {}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-@media only screen and (min-width: 1200px) {
-    ...
-}
+@media only screen and (min-width: 1200px) {}
