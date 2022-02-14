@@ -17,7 +17,7 @@
 }
 
 body {
-    max-width: 80%;
+    max-width: 88%;
     direction: rtl;
     margin: 0 auto;
     position: relative
@@ -25,8 +25,8 @@ body {
 
 #translate-parent {
     position: fixed;
-    bottom: 30rem;
-    left: 1.6rem;
+    bottom: 4rem;
+    left: 1rem;
     direction: ltr;
     z-index: 30;
 }
@@ -52,10 +52,13 @@ body {
     display: inline-block
 }
 
+
+/* --------------------------- navbar --------------------------- */
+
 .navbar {
     display: flex;
     margin: 0 auto;
-    margin-top: 2.8rem;
+    margin-top: 3rem;
 }
 
 .logo-all {
@@ -156,6 +159,9 @@ ul a {
     display: none;
 }
 
+
+/* --------------------------- header --------------------------- */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -165,23 +171,23 @@ header {
 }
 
 aside {
-    margin-top: 10rem;
+    margin-top: 9rem;
 }
 
 aside>h1 {
-    font-size: 3em;
+    font-size: 3.6em;
     line-height: 1em;
     margin: 2rem 0 3rem 0;
 }
 
 #mouse-text {
     color: var(--maingray);
-    font-size: 1em;
-    margin: 1.2rem 0 1.8rem 0;
+    font-size: 1.2em;
+    margin: 1.4rem 0 2.2rem 0;
 }
 
 #money {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 400;
 }
 
@@ -194,7 +200,7 @@ aside>h1 {
 .two-btn-header {
     display: flex;
     gap: .8rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .shop-btn {
@@ -362,21 +368,17 @@ aside>h1 {
     color: var(--mainWhite);
 }
 
+
+/* --------------------------- devices navbar --------------------------- */
+
 .devices-navbar {
+    width: 100%;
     direction: ltr;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     cursor: pointer;
-}
-
-.d-n-aside {
-    display: flex;
-}
-
-.devices-img:hover {
-    transform: scale(1.1);
-    transition: .2s;
+    margin: 0 auto;
+    margin-top: 8rem;
 }
 
 .devices-navbar-column {
@@ -387,31 +389,51 @@ aside>h1 {
     font-size: 1em;
 }
 
+.d-n-aside {
+    display: flex;
+}
+
+.devices-img {
+    width: 100px;
+}
+
+.devices-img:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+
+/* --------------------------- weekly --------------------------- */
+
 .weekly {
     display: flex;
-    gap: .8rem;
-    margin-top: 1rem;
+    gap: 1rem;
+    margin-top: 1.8rem;
 }
 
 .weekly-left {
-    width: 100%;
-    height: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 1.3rem;
     align-items: center;
     width: 28%;
     height: 100%;
     background-color: #edf2f6;
     margin: 6rem 0 0 0;
     padding: 2.8rem 0 2.6rem 0;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .weekly-h3 {
-    font-size: 2.2em;
+    font-size: 2.4em;
     font-weight: 500;
     text-align: center;
+    margin-top: 1.2rem;
+}
+
+.weekly-h3-1 {
+    display: none;
 }
 
 .weekly-text {
@@ -420,9 +442,15 @@ aside>h1 {
     text-align: center;
 }
 
+.weekly-text-1 {
+    display: none;
+}
+
 .countdown {
     display: flex;
     gap: 1.8rem;
+    color: rgb(92, 91, 91);
+    font-weight: 550;
 }
 
 span>sub {
@@ -448,6 +476,7 @@ p #demo {
     box-shadow: rgb(74 20 140 / 18%) 0px 3px 5px 0px;
     cursor: pointer;
     margin: 0 auto;
+    margin: 0.8rem 0 0.8rem 0;
 }
 
 .weekly-btn:hover {
@@ -456,13 +485,15 @@ p #demo {
 }
 
 .weekly-right {
-    display: flex;
-    width: 100%;
-    height: 70%;
+    height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 84%;
+    height: 100%;
     background-color: #edf2f6;
-    border-radius: 10px;
+    border-radius: 12px;
     margin: 6rem 0 0 0;
-    padding: 0rem 0 2.6rem 0;
+    padding: .4rem 0 1.4rem 0;
 }
 
 .w-r-div-img {
@@ -473,14 +504,15 @@ p #demo {
 }
 
 .w-r-img {
-    width: 15.5rem;
-    height: 18.5rem;
+    width: 17.5rem;
+    height: 21rem;
     border-radius: 10px;
 }
 
 .w-r-first {
     font-size: .8em;
     color: var(--maingray);
+    margin-bottom: 0.2rem;
 }
 
 .w-r-sec {
@@ -509,6 +541,7 @@ p #demo {
 
 .w-discount3 {
     position: relative;
+    bottom: 418px;
 }
 
 .w-discount {
@@ -522,18 +555,15 @@ p #demo {
 }
 
 .w-discount:first-child {
-    top: 18px;
-    left: 688px;
+    left: 236px;
 }
 
 .w-discount:nth-child(2) {
-    top: 18px;
-    left: 450px;
+    right: 310px;
 }
 
 .w-discount:nth-child(3) {
-    top: 18px;
-    left: 210px;
+    left: -368px;
 }
 
 .playing-ideals {
@@ -743,6 +773,31 @@ p #demo {
     margin-top: 100rem;
 }
 
+@media only screen and (max-width: 1280px) {
+    body {
+        width: 80%;
+    }
+    .w-r-img {
+        width: 13rem;
+        height: 17rem;
+    }
+    .weekly-right {
+        padding: 1.4rem 0 4.4rem 0;
+    }
+    .w-discount3 {
+        bottom: 375px;
+    }
+    .w-discount:nth-child(3) {
+        left: -298px;
+    }
+    .w-discount:nth-child(2) {
+        right: 270px;
+    }
+    .w-discount:first-child {
+        left: 144px;
+    }
+}
+
 @media only screen and (max-width: 1028px) {
     body {
         max-width: 98%;
@@ -785,20 +840,36 @@ p #demo {
     .pro-btn {
         display: none;
     }
+    .mouse {
+        left: 30px;
+    }
+    .right-arrow-2 {
+        left: 210px;
+    }
+    #design {
+        left: 146px;
+        font-size: .8em;
+    }
+    #scroll {
+        font-size: .8em;
+    }
+    #back-forward {
+        font-size: .8em;
+    }
     .devices-navbar {
-        gap: 15rem;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
     }
     .nav-bottom {
-        width: 100%;
         direction: ltr;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         position: fixed;
         bottom: 0;
-        z-index: 100;
         background-color: var(--mainWhite);
         box-shadow: 0px -2px 4px 0px rgb(0 0 0 / 8%);
-        border-top: 1px black;
         padding: .2rem 0 .2rem 0;
     }
     .n-b-nav {
@@ -813,12 +884,6 @@ p #demo {
     .n-b-nav p {
         font-size: .8em;
     }
-    /* .n-b-img:nth-child(2) {
-        border: 1px solid #000 !important;
-        background-color: #4A148C;
-        width: 30% !important;
-        height: 30%;
-    } */
     .shop-btn {
         width: 200px;
         height: 42px;
@@ -831,6 +896,9 @@ p #demo {
         padding: 0px 18px;
         font-size: 16px;
     }
+    aside {
+        margin-top: 8rem;
+    }
     aside p {
         font-size: 1em;
     }
@@ -839,48 +907,76 @@ p #demo {
     }
     .left-arrow {
         top: 158px;
-        right: 34px;
+        right: 70px;
     }
     #back-forward {
         top: 144px;
         right: -52px;
+    }
+    .weekly {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .weekly-left {
+        width: 100%;
+        padding: 1rem 0 1rem 0;
+    }
+    .w-discount3 {
+        bottom: 385px;
+    }
+    .weekly-right {
+        width: 100%;
+        margin-top: 0;
+    }
+    .weekly-text {
+        display: none;
+    }
+    .weekly-text-1 {
+        display: flex;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+    .weekly-h3 {
+        display: none;
+    }
+    .weekly-h3-1 {
+        display: flex;
+        font-size: 2.5em;
+        margin-top: .8rem;
+    }
+    .weekly-btn {
+        margin-bottom: .8rem;
+    }
+    .w-r-img {
+        width: 14rem;
+        height: 18rem;
     }
     .d-n-aside {
         display: flex;
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .w-discount3 {
+        bottom: 360px;
+    }
+    .w-r-img {
+        width: 12rem;
+        height: 16rem;
+    }
+}
+
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+    .w-discount3 {
+        bottom: 340px;
+    }
+    .w-r-img {
+        width: 11rem;
+        height: 15rem;
+    }
+    .devices-img {
+        width: 70px;
+    }
 }
-
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-}
-
-@media only screen and (min-width: 768px) {}
-
-
-/* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px) {}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {}
