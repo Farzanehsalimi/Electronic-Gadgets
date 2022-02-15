@@ -7,7 +7,7 @@
     font-family: 'Vazir', sans-serif;
 }
 
-:root {
+ :root {
     --primaryColor: #4A148C;
     --mainWhite: #fff;
     --mainBlack: #000;
@@ -17,7 +17,7 @@
 }
 
 body {
-    max-width: 88%;
+    max-width: 100%;
     direction: rtl;
     margin: 0 auto;
     position: relative
@@ -56,6 +56,7 @@ body {
 /* --------------------------- navbar --------------------------- */
 
 .navbar {
+    max-width: 90%;
     display: flex;
     margin: 0 auto;
     margin-top: 3rem;
@@ -163,9 +164,11 @@ ul a {
 /* --------------------------- header --------------------------- */
 
 header {
+    max-width: 88%;
     display: flex;
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
     margin-top: 3rem;
     gap: 0rem;
 }
@@ -775,7 +778,10 @@ p #demo {
 
 @media only screen and (max-width: 1280px) {
     body {
-        width: 80%;
+        width: 100%;
+    }
+    header {
+        max-width: 95%;
     }
     .w-r-img {
         width: 13rem;
@@ -799,9 +805,6 @@ p #demo {
 }
 
 @media only screen and (max-width: 1028px) {
-    body {
-        max-width: 98%;
-    }
     .navbar {
         max-width: 95%;
         justify-content: space-between;
@@ -812,7 +815,6 @@ p #demo {
     }
     .nav-logo {
         transform: translateY(-2px);
-        rotate: (180deg);
     }
     ul {
         display: none;
@@ -841,7 +843,7 @@ p #demo {
         display: none;
     }
     .mouse {
-        left: 30px;
+        left: 15px;
     }
     .right-arrow-2 {
         left: 210px;
@@ -851,10 +853,10 @@ p #demo {
         font-size: .8em;
     }
     #scroll {
-        font-size: .8em;
+        font-size: .8em
     }
     #back-forward {
-        font-size: .8em;
+        font-size: .8em
     }
     .devices-navbar {
         flex-direction: column;
@@ -871,6 +873,7 @@ p #demo {
         background-color: var(--mainWhite);
         box-shadow: 0px -2px 4px 0px rgb(0 0 0 / 8%);
         padding: .2rem 0 .2rem 0;
+        z-index: 30;
     }
     .n-b-nav {
         display: flex;
@@ -914,8 +917,10 @@ p #demo {
         right: -52px;
     }
     .weekly {
+        max-width: 95%;
         flex-direction: column;
-        gap: 1rem;
+        gap: .8rem;
+        margin: 0 auto;
     }
     .weekly-left {
         width: 100%;
@@ -964,6 +969,27 @@ p #demo {
         width: 12rem;
         height: 16rem;
     }
+    aside>h1 {
+        font-size: 2.4em;
+    }
+    #mouse-text {
+        font-size: 1em;
+    }
+    #money {
+        font-size: 1.2em;
+    }
+    .shop-btn {
+        width: 165px;
+        height: 42px;
+        padding: 10px 18px;
+        font-size: 1em;
+    }
+    .next-btn {
+        width: 88px;
+        height: 42px;
+        padding: 0px 18px;
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -971,12 +997,50 @@ p #demo {
         bottom: 340px;
     }
     .w-r-img {
-        width: 11rem;
-        height: 15rem;
+        width: 17rem;
+        height: 20rem;
     }
     .devices-img {
         width: 70px;
     }
+    .weekly-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 0 1rem 0;
+    }
+    .devices-navbar {
+        width: 90%;
+    }
+    #w-r-div-img-pink {
+        display: none;
+    }
+    #w-discount-40 {
+        display: none;
+    }
+    .w-discount:nth-child(2) {
+        top: -46px;
+        right: 35px;
+    }
+    .w-discount:nth-child(3) {
+        top: -46px;
+        left: -100px;
+    }
+    .w-r-first {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .w-r-img {
+        width: 14rem;
+        height: 17rem;
+    }
+    .w-discount:nth-child(2) {
+        top: 0px;
+        right: 35px;
+    }
+    .w-discount:nth-child(3) {
+        top: 0px;
+        left: -100px;
+    }
+}
