@@ -77,7 +77,7 @@ body {
     font-size: 1.9em;
 }
 
-ul {
+.ul-first-1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,12 +87,12 @@ ul {
     list-style: none;
 }
 
-ul li {
+.ul-first-1 li {
     display: flex;
     flex-wrap: nowrap;
 }
 
-ul a {
+.ul-first-1 a {
     font-size: 1.1em;
     color: var(--mainBlack);
     text-decoration: none;
@@ -575,10 +575,10 @@ p #demo {
 /* --------------------------- playing ideals --------------------------- */
 
 .playing-ideals {
-    max-width: 85%;
+    max-width: 100%;
     display: flex;
-    justify-content: space-around;
-    gap: 8rem;
+    justify-content: center;
+    gap: 6rem;
     margin: 0 auto;
     margin-top: 7rem;
 }
@@ -632,20 +632,42 @@ p #demo {
     display: none;
 }
 
+
+/* --------------------------- best selling --------------------------- */
+
 .best-selling {
+    width: 86%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
     margin-top: 8rem;
 }
 
 #ul-sec {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2.2rem;
     margin: 0 auto;
+}
+
+.b-s-icon {
+    width: 10%;
 }
 
 .b-s-nav {
     display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    margin: 0 auto;
+}
+
+.b-s-icone {
+    width: 15px;
 }
 
 .b-s-nav h2 {
-    font-size: 1.6em;
+    font-size: 1.9em;
 }
 
 .b-s-li {
@@ -665,12 +687,13 @@ p #demo {
 .b-s-watch {
     display: flex;
     direction: ltr;
-    gap: .6rem;
+    /* gap: .7rem; */
+    margin: 0 auto;
     margin-top: 1rem;
 }
 
 .b-s-img {
-    width: 15.4rem;
+    width: 95%;
 }
 
 .b-s-watch span {
@@ -827,6 +850,15 @@ p #demo {
         width: 290px;
         font-size: 1.1em;
     }
+    .b-s-nav {
+        gap: 13.5rem;
+    }
+    .b-s-nav h2 {
+        font-size: 1.6em;
+    }
+    .b-s-img {
+        width: 14.6rem;
+    }
 }
 
 @media only screen and (max-width: 1028px) {
@@ -844,7 +876,7 @@ p #demo {
     .nav-logo {
         transform: translateY(-2px);
     }
-    ul {
+    ul #ul-first {
         display: none;
     }
     #nav-ham {
@@ -887,7 +919,6 @@ p #demo {
         font-size: .8em
     }
     .devices-navbar {
-        /* width: 90%; */
         flex-direction: column;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -902,7 +933,7 @@ p #demo {
         bottom: 0;
         background-color: var(--mainWhite);
         box-shadow: 0px -2px 4px 0px rgb(0 0 0 / 8%);
-        padding: .2rem 0 .2rem 0;
+        padding: 0.2rem 0 0.2rem 0;
         z-index: 300;
     }
     .n-b-nav {
@@ -912,7 +943,7 @@ p #demo {
         gap: .2rem;
     }
     .n-b-img {
-        width: 9%;
+        width: 10%;
     }
     .n-b-nav p {
         font-size: .8em;
@@ -1004,6 +1035,33 @@ p #demo {
     .p-i-btn {
         margin: .6rem 0 .4rem 0;
     }
+    .b-s-img {
+        width: 17rem;
+    }
+    .best-selling {
+        width: 88%;
+        align-items: none;
+    }
+    .b-s-nav {
+        flex-direction: column;
+        gap: 1.6rem;
+        margin: 0 0rem 1rem 17rem;
+    }
+    .b-s-icone {
+        width: 18px;
+        margin-bottom: .4rem;
+    }
+    .b-s-li {
+        flex-direction: column;
+    }
+    .b-s-watch {
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 auto; */
+    }
+    .b-s-img-s-5 {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1043,6 +1101,21 @@ p #demo {
     }
     .p-i-first {
         margin-top: 0rem;
+    }
+    .best-selling {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .b-s-nav {
+        margin: 0 0rem 1rem 14rem;
+    }
+    .b-s-img {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .b-s-img-nike {
+        display: none;
     }
 }
 
@@ -1174,6 +1247,12 @@ p #demo {
     .p-i-img {
         display: none;
     }
+    .nav-bottom {
+        padding: 0.4rem 0 0.4rem 0;
+    }
+    .n-b-img {
+        width: 13%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1233,6 +1312,9 @@ p #demo {
         top: 20px;
         left: -100px;
     }
+    .n-b-img {
+        width: 13%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1278,19 +1360,10 @@ p #demo {
         font-size: .6em;
     }
     .n-b-img {
-        width: 15%;
+        width: 18%;
     }
     .nav-bottom {
         width: 100%;
-        /* direction: ltr;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        position: fixed;
-        bottom: 0;
-        background-color: var(--mainWhite);
-        box-shadow: 0px -2px 4px 0px rgb(0 0 0 / 8%);
-        padding: .2rem 0 .2rem 0;
-        z-index: 300; */
     }
     #translate-parent {
         bottom: 4rem;
