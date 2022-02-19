@@ -344,6 +344,7 @@ aside>h1 {
     position: fixed;
     bottom: 4.4rem;
     right: 2rem;
+    z-index: 37;
 }
 
 .pro-btn button {
@@ -744,7 +745,83 @@ p #demo {
 }
 
 
-/* part 9 */
+/* --------------------------- 11.three device box --------------------------- */
+
+.three-device-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    direction: ltr;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.three-device-box-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.t-d-1-img {
+    width: 610px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.three-device-box-2 {
+    position: relative;
+}
+
+.t-d-2-img {
+    width: 250px;
+    height: 511px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.t-d-1-img:hover {
+    transform: scale(1.01);
+    transition: .2s;
+}
+
+.c-u-2-img:hover {
+    transform: scale(1.01);
+    transition: .2s;
+}
+
+.t-d-text-1 {
+    color: var(--mainWhite);
+    position: absolute;
+    top: 33px;
+    left: 478px;
+    z-index: 35;
+}
+
+.t-d-text-2 {
+    color: var(--mainWhite);
+    position: absolute;
+    top: 320px;
+    left: 470px;
+}
+
+.t-d-text-3 {
+    color: var(--mainWhite);
+    position: absolute;
+    right: 30px;
+    bottom: 400px;
+}
+
+.contact-us h3 {
+    font-size: 2em;
+}
+
+
+/* --------------------------- 9.Performance Made Better --------------------------- */
 
 .performance-made-better {
     position: relative;
@@ -806,17 +883,48 @@ p #demo {
 }
 
 
-/* part 13 */
+/* --------------------------- 12.contact us --------------------------- */
+
+.contact-us {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 300px 300px 400px;
+    color: var(--mainWhite);
+    background-image: url(./img/9.performance-made-better/background.jpeg);
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 15rem;
+    padding: 2.2rem 0 2.2rem 0;
+    border-radius: 10px;
+}
+
+.c-u-svg-div {
+    /* padding: 1rem; */
+}
+
+.c-u-svg {
+    padding: 1rem;
+    margin: 4rem;
+    /* color: var(--mainWhite); */
+    width: 90px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+
+/* --------------------------- 13.company navbar --------------------------- */
 
 .company-navbar {
+    width: 78%;
     display: flex;
     justify-content: space-between;
     direction: ltr;
+    margin: 0 auto;
     margin-top: 10rem;
 }
 
 .c-v-img {
-    width: 13rem;
+    width: 19%;
 }
 
 .lorem {
