@@ -13,14 +13,14 @@
     --mainBlack: #000;
     --mainGreen: #f8faf9;
     --mainBlue: #f8f9fb;
-    --maingray: #7d7d7d;
+    --mainGray: #7d7d7d;
 }
 
 body {
     max-width: 100%;
     direction: rtl;
     margin: 0 auto;
-    position: relative
+    position: relative;
 }
 
 #translate-parent {
@@ -33,7 +33,6 @@ body {
 
 #translate-parent button {
     background-color: #ff318b;
-    /* background-color: rgba(89, 86, 233, 1); */
     color: white;
     border: 0;
     width: 30px;
@@ -53,7 +52,7 @@ body {
 }
 
 
-/* --------------------------- navbar --------------------------- */
+/* --------------------------- 1.navbar --------------------------- */
 
 .navbar {
     max-width: 88%;
@@ -161,7 +160,7 @@ body {
 }
 
 
-/* --------------------------- header --------------------------- */
+/* --------------------------- 2.header --------------------------- */
 
 header {
     max-width: 88%;
@@ -184,20 +183,21 @@ aside>h1 {
 }
 
 #mouse-text {
-    color: var(--maingray);
+    color: var(--mainGray);
     font-size: 1.2em;
-    margin: 1.4rem 0 2.2rem 0;
+    margin: 1.8rem 0 2.6rem 0;
 }
 
 #money {
-    font-size: 1.4em;
-    font-weight: 400;
+    font-size: 1.5em;
+    font-weight: 450;
+    margin-bottom: .6rem;
 }
 
 #mouse {
     font-size: 1.4em;
     font-weight: 400;
-    color: var(--maingray);
+    color: var(--mainGray);
 }
 
 .two-btn-header {
@@ -373,7 +373,7 @@ aside>h1 {
 }
 
 
-/* --------------------------- devices navbar --------------------------- */
+/* --------------------------- 3.devices navbar --------------------------- */
 
 .devices-navbar {
     width: 86%;
@@ -383,6 +383,7 @@ aside>h1 {
     cursor: pointer;
     margin: 0 auto;
     margin-top: 5rem;
+    opacity: .8;
 }
 
 .devices-navbar-column {
@@ -407,14 +408,14 @@ aside>h1 {
 }
 
 
-/* --------------------------- weekly --------------------------- */
+/* --------------------------- 4.weekly --------------------------- */
 
 .weekly {
     width: 86%;
     display: flex;
     gap: 1rem;
     margin: 0 auto;
-    margin-top: 1.8rem;
+    margin-top: 2rem;
 }
 
 .weekly-left {
@@ -517,7 +518,7 @@ p #demo {
 
 .w-r-first {
     font-size: .8em;
-    color: var(--maingray);
+    color: var(--mainGray);
     margin-bottom: 0.2rem;
 }
 
@@ -573,7 +574,7 @@ p #demo {
 }
 
 
-/* --------------------------- playing ideals --------------------------- */
+/* --------------------------- 5.playing ideals --------------------------- */
 
 .playing-ideals {
     max-width: 100%;
@@ -595,7 +596,7 @@ p #demo {
 
 .p-i-first p {
     font-size: 1em;
-    color: var(--maingray);
+    color: var(var(--mainGray));
     margin: 1rem 0 .2rem 0;
 }
 
@@ -1033,6 +1034,8 @@ p #demo {
         font-size: .8em
     }
     #back-forward {
+        top: 148px;
+        right: -2px;
         font-size: .8em
     }
     .devices-navbar {
@@ -1089,10 +1092,6 @@ p #demo {
     .left-arrow {
         top: 158px;
         right: 70px;
-    }
-    #back-forward {
-        top: 144px;
-        right: -52px;
     }
     .weekly {
         max-width: 100%;
@@ -1486,9 +1485,6 @@ p #demo {
     .n-b-img {
         width: 18%;
     }
-    .nav-bottom {
-        width: 100%;
-    }
     #translate-parent {
         bottom: 4rem;
         left: 2rem;
@@ -1511,14 +1507,83 @@ p #demo {
         top: -52px;
         left: 18px;
     }
-    /* .n-b-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: .2rem;
+    .left-arrow {
+        top: 96px;
+        right: 68px;
     }
-    
-     */
+    #back-forward {
+        top: 88px;
+        left: 316px;
+        font-size: .6em;
+    }
+    .right-arrow-1 {
+        top: 104px;
+        left: 74px;
+    }
+    .right-arrow-2 {
+        top: 80px;
+        left: 164px;
+    }
+    #design {
+        top: 68px;
+        left: 120px;
+        font-size: .6em;
+    }
+    #scroll {
+        top: 88px;
+        left: 42px;
+        font-size: .6em;
+    }
+    .purple-shadow {
+        top: 216px;
+        left: 42px;
+    }
+    .blue-circle {
+        top: 30px;
+    }
+    .w-discount:nth-child(2) {
+        top: -62px;
+    }
+    #w-discount-24 {
+        display: none;
+    }
+    .weekly-right {
+        grid-template-columns: 1fr;
+    }
+    #w-r-img-h-c-h {
+        display: none;
+    }
+    .w-r-img {
+        width: 19rem;
+        height: 22rem;
+    }
 }
 
-@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 375px) {
+    .left-arrow {
+        top: 96px;
+        right: 37px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .weekly-text-1 {
+        font-size: .8em;
+    }
+    .w-r-img {
+        width: 16rem;
+        height: 19rem;
+    }
+    .w-discount:nth-child(2) {
+        top: -8px;
+    }
+    .weekly-h3-1 {
+        font-size: 2em;
+    }
+    .devices-navbar {
+        gap: 1rem;
+    }
+    .devices-navbar-column p {
+        font-size: .65em;
+    }
+}
