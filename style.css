@@ -382,7 +382,8 @@ aside>h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     cursor: pointer;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     opacity: .8;
 }
 
@@ -412,22 +413,20 @@ aside>h1 {
 
 .weekly {
     width: 86%;
+    height: 100%;
     display: flex;
     gap: 1rem;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 10rem;
 }
 
 .weekly-left {
-    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
     align-items: center;
     width: 28%;
-    height: 100%;
     background-color: #edf2f6;
-    margin: 6rem 0 0 0;
     padding: 2.8rem 0 2.6rem 0;
     border-radius: 12px;
 }
@@ -492,14 +491,12 @@ p #demo {
 }
 
 .weekly-right {
-    height: 20rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 84%;
     height: 100%;
     background-color: #edf2f6;
     border-radius: 12px;
-    margin: 6rem 0 0 0;
     padding: .4rem 0 1.4rem 0;
 }
 
@@ -932,6 +929,84 @@ p #demo {
     margin-top: 100rem;
 }
 
+
+/* --------------------------- 14.footer --------------------------- */
+
+footer {
+    margin-top: 10rem;
+}
+
+.f-o-first {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2.5rem 0 2.5rem 0;
+    background-color: #ecf2f6;
+}
+
+.f-o-f-div {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.f-o-f-text {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.f-o-f-text h4 {
+    font-size: 1.2em;
+}
+
+.f-o-f-text span {
+    font-size: 1em;
+    color: var(--mainGray);
+}
+
+.f-o-f-circle {
+    border: 2px solid #000;
+    border-radius: 50%;
+    transition: 300ms ease-in;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.f-o-f-svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.f-o-main {
+    background-image: url(./img/14.footer/background.svg);
+    direction: ltr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.f-o-m-teta {
+    width: 8rem;
+    height: 8rem;
+}
+
+.f-o-footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin: 20rem 0 4rem 0;
+    padding: 2rem .8rem 2rem .8rem;
+    background-color: #ecf2f6;
+}
+
+.f-o-3part {
+    display: flex;
+}
+
 @media only screen and (max-width: 1280px) {
     .devices-img {
         width: 100px;
@@ -1043,6 +1118,9 @@ p #demo {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3rem;
+        margin: 0 auto;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
     }
     .nav-bottom {
         width: 100%;
@@ -1136,6 +1214,7 @@ p #demo {
         display: flex;
     }
     .playing-ideals {
+        width: 92%;
         gap: 1rem;
     }
     .p-i-first {
@@ -1344,13 +1423,14 @@ p #demo {
         display: flex;
         flex-direction: column;
         gap: 4rem;
-        margin-top: 6rem;
+        margin-top: 8rem;
     }
     .p-i-first {
         display: flex;
         flex-direction: column;
         gap: .3rem;
         text-align: center;
+        margin: 0 auto;
     }
     .p-i-btn {
         margin: 0 auto;
@@ -1445,6 +1525,11 @@ p #demo {
     .devices-navbar-column p {
         font-size: .7em;
     }
+    /* .devices-navbar {
+        margin: 0 auto;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    } */
     body {
         width: 100%
     }
@@ -1458,7 +1543,7 @@ p #demo {
         gap: 2rem;
     }
     #aside-h {
-        margin-top: 3rem;
+        margin: 4rem 0 3rem 0;
     }
     aside>h1 {
         margin: 1.4rem 0 1.2rem 0;
@@ -1585,5 +1670,8 @@ p #demo {
     }
     .devices-navbar-column p {
         font-size: .65em;
+    }
+    .p-i-btn {
+        width: 240px;
     }
 }
