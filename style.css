@@ -809,11 +809,12 @@
         
         .performance-made-better {
             position: relative;
-            height: 90%;
+            width: 86%;
             display: flex;
             justify-content: space-between;
             background-image: url(./img/9.performance-made-better/background.jpeg);
             background-size: cover;
+            margin: 0 auto;
             margin-top: 15rem;
             border-radius: 10px;
         }
@@ -831,19 +832,26 @@
             font-weight: 400;
         }
         
+        .p-m-b-text p {
+            width: 50%;
+            font-size: 1.1em;
+            line-height: 1.6rem;
+            margin: 1.4rem 0 .4rem 0;
+        }
+        
         .p-m-b-btn {
             border: 0;
             color: var(--primaryColor);
             background-color: var(--mainWhite);
-            width: 291px;
-            line-height: 18px;
+            width: 296px;
+            line-height: 26px;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 1.2em;
             padding: 16px 95px 18px 95px;
             border-radius: 120px;
             box-shadow: rgb(74 20 140 / 18%) 0px 3px 5px 0px;
             cursor: pointer;
-            margin: .8rem 0 1.8rem 0;
+            margin: 1rem 0 2.2rem 0;
         }
         
         .p-m-b-btn:hover {
@@ -853,9 +861,9 @@
         
         .p-m-b-img {
             position: absolute;
-            top: -100px;
+            top: -130px;
             left: 9px;
-            width: 30rem;
+            width: 560px;
         }
         /* --------------------------- 12.contact us --------------------------- */
         
@@ -1153,6 +1161,30 @@
             }
             .ul-sec-1 {
                 gap: 2rem;
+            }
+            /* 9.performance made better */
+            .performance-made-better {
+                width: 96%;
+            }
+            .p-m-b-img {
+                top: -110px;
+                left: 9px;
+                width: 500px;
+            }
+            .p-m-b-text h2 {
+                font-size: 2.6em;
+                font-weight: 500;
+            }
+            .p-m-b-text p {
+                width: 40%;
+                font-size: 1em;
+            }
+            .p-m-b-btn {
+                width: 255px;
+                line-height: 26px;
+                font-size: 1.1em;
+                padding: 16px 10px 18px 10px;
+                margin: 1rem 0 2.2rem 0;
             }
             /* 14.footer */
             .f-o-1-all,
@@ -1464,6 +1496,18 @@
             .b-s-img-nike {
                 display: none;
             }
+            /* 9.performance made better */
+            .p-m-b-img {
+                top: -50px;
+                left: -4px;
+                width: 420px;
+            }
+            .p-m-b-text {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin: 3rem 2rem 2rem 0;
+            }
             /* 14.footer */
             .f-o-1-all,
             .f-o-2,
@@ -1617,6 +1661,10 @@
             /* 6.best selling */
             .best-selling {
                 align-items: end;
+            }
+            /* 9. */
+            .performance-made-better {
+                flex-direction: column !important;
             }
             /* 14.footer */
             .f-o-2 {
