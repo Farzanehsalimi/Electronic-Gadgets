@@ -217,7 +217,7 @@ header {
 }
 
 .aside-h {
-    margin-top: 9rem;
+    margin-top: 6rem;
 }
 
 .aside-h h1 {
@@ -1454,7 +1454,6 @@ footer {
         right: -2px;
         font-size: .8em
     }
-    /* 2.header */
     .aside-h {
         margin-top: 8rem;
     }
@@ -1914,17 +1913,10 @@ footer {
         margin: 0 auto;
         margin-bottom: 2.2rem;
     }
-    /* 11.three-device-box */
+    /* 11 */
     .three-device-box {
-        /* width: 85%; */
-        /* grid-template-columns: 1fr; */
+        grid-template-columns: 1fr;
     }
-    /* .t-d-box-1>div {
-        height: 180px;
-    }
-    .t-d-box-2>div {
-        height: 416px;
-    } */
     /* 12.contact us */
     .contact-us {
         flex-direction: column;
@@ -2124,17 +2116,17 @@ footer {
     }
     #back-forward {
         top: 88px;
-        left: 316px;
+        left: 380px;
         font-size: .6em;
     }
     #design {
-        top: 68px;
-        left: 120px;
+        top: 72px;
+        left: 90px;
         font-size: .6em;
     }
     #scroll {
-        top: 88px;
-        left: 42px;
+        top: 96px;
+        left: 16px;
         font-size: .6em;
     }
     .purple-shadow {
@@ -2168,7 +2160,7 @@ footer {
         left: 2rem;
     }
     #translate-parent button {
-        width: 10px;
+        width: 20px;
         height: 20px;
         font-size: 12px;
         font-weight: bold;
