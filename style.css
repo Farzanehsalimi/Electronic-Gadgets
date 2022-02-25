@@ -447,21 +447,12 @@ header {
     font-size: 2.4em;
     font-weight: 500;
     text-align: center;
-    margin-top: 1.2rem;
-}
-
-.weekly-h3-1 {
-    display: none;
 }
 
 .weekly-text {
     font-size: 1em;
     margin: 0 auto;
     text-align: center;
-}
-
-.weekly-text-1 {
-    display: none;
 }
 
 .countdown {
@@ -599,18 +590,18 @@ p #demo {
 }
 
 .p-i-first h2 {
-    font-size: 2.6em;
+    font-size: 2.8em;
     margin: 3rem 0 3rem 0;
 }
 
 .p-i-first p {
-    font-size: 1em;
+    font-size: 1.1em;
     color: var(var(--mainGray));
     margin: 1rem 0 .2rem 0;
 }
 
 .playing-ideals h2 {
-    font-size: 2.2em;
+    font-size: 2.8em;
     font-weight: 500;
     margin: 1.5rem 0 1.5rem 0;
 }
@@ -786,11 +777,10 @@ p #demo {
 .p-m-b-text h2 {
     font-size: 3.4em;
     font-weight: 500;
-    margin-top: 1.6rem;
+    margin-top: rem;
 }
 
 .p-m-b-text p {
-    width: 45%;
     font-size: 1.1em;
     line-height: 1.6rem;
     margin: .4rem 0 .4rem 0;
@@ -808,7 +798,7 @@ p #demo {
     border-radius: 120px;
     box-shadow: rgb(74 20 140 / 18%) 0px 3px 5px 0px;
     cursor: pointer;
-    margin: .5rem 0 2.2rem 0;
+    margin: 0rem 0 1rem 0;
 }
 
 .p-m-b-btn:hover {
@@ -896,24 +886,24 @@ p #demo {
     width: 100%;
     color: var(--mainWhite);
     position: absolute;
-    top: 55px;
-    left: 250px;
+    top: 50px;
+    left: -36px;
 }
 
 .t-d-text-2 {
     width: 100%;
     color: var(--mainWhite);
     position: absolute;
-    top: 415px;
-    left: 250px;
+    top: 378px;
+    left: -36px;
 }
 
 .t-d-text-3 {
     width: 100%;
     color: var(--mainWhite);
     position: absolute;
-    top: 55px;
-    right: 45px;
+    top: 50px;
+    right: 42px;
 }
 
 .t-d-text-1,
@@ -1005,10 +995,6 @@ p #demo {
 
 .c-v-img {
     width: 200px;
-}
-
-.lorem {
-    margin-top: 100rem;
 }
 
 
@@ -1162,7 +1148,20 @@ footer {
 
 .f-o-p-email {
     display: flex;
+    align-items: end;
     gap: 0.8rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: .5rem;
+}
+
+.label-email {
+    font-size: 1em;
+    opacity: .8;
 }
 
 .f-o-p-form {
@@ -1294,7 +1293,6 @@ footer {
         font-weight: 500;
     }
     .p-m-b-text p {
-        width: 40%;
         font-size: 1em;
     }
     .p-m-b-btn {
@@ -1308,11 +1306,17 @@ footer {
     .three-device-box {
         width: 80%;
     }
+    .three-device-box h3 {
+        font-size: 2.2em;
+    }
     .t-d-box-1>div {
         height: 282px;
     }
     .t-d-box-2>div {
         height: 580px;
+    }
+    .t-d-text-2 {
+        top: 350px;
     }
     /* 12.contact us*/
     .contact-us {
@@ -1361,9 +1365,6 @@ footer {
     .f-o-p-form {
         width: 350px;
         height: 56px;
-    }
-    .f-o-p-btn {
-        width: 150px;
     }
 }
 
@@ -1509,19 +1510,6 @@ footer {
     .weekly-text {
         display: none;
     }
-    .weekly-text-1 {
-        display: flex;
-        font-size: 1.1em;
-        font-weight: 400;
-    }
-    .weekly-h3 {
-        display: none;
-    }
-    .weekly-h3-1 {
-        display: flex;
-        font-size: 2.5em;
-        margin-top: .8rem;
-    }
     .weekly-btn {
         margin-bottom: .8rem;
     }
@@ -1580,6 +1568,9 @@ footer {
     .b-s-img-s-5 {
         display: none;
     }
+    .p-m-b-text p {
+        font-size: .9em;
+    }
     /* 11. */
     .three-device-box {
         width: 95%;
@@ -1589,6 +1580,13 @@ footer {
     }
     .t-d-box-2>div {
         height: 538px;
+    }
+    .t-d-text-1 {
+        top: 40px;
+        left: -36px;
+    }
+    .t-d-text-2 {
+        top: 330px;
     }
     /* 12.contact us */
     .c-u-numbers p {
@@ -1704,6 +1702,15 @@ footer {
         margin: 3rem 2rem 2rem 0;
     }
     /* 11.three-device-box */
+    .three-device-box h3 {
+        font-size: 2em;
+    }
+    .t-d-text-1 {
+        top: 22px;
+    }
+    .t-d-text-2 {
+        top: 248px;
+    }
     .t-d-box-1>div {
         height: 200px;
     }
@@ -1897,11 +1904,10 @@ footer {
         text-align: center;
         margin: 0 auto;
     }
-    .p-m-b-text h2 {
+    .p-m-b-text {
         margin-top: 30rem;
     }
     .p-m-b-text p {
-        width: 90%;
         margin: 0 auto;
         margin-bottom: .8rem;
     }
@@ -1917,6 +1923,20 @@ footer {
     .three-device-box {
         grid-template-columns: 1fr;
     }
+    /* .t-d-1-img {
+        width: 90%;
+        height: 90%;
+    }
+    .t-d-2-img {
+        width: 90%;
+        height: 90%;
+    }
+    .t-d-text-1 {
+        width: 50%;
+    }
+    .t-d-text-2 {
+        width: 50%;
+    } */
     /* 12.contact us */
     .contact-us {
         flex-direction: column;
@@ -2043,7 +2063,7 @@ footer {
     .p-m-b-img {
         width: 460px;
     }
-    .p-m-b-text h2 {
+    .p-m-b-text {
         margin-top: 26rem;
     }
     /* 13.company navbar */
@@ -2145,7 +2165,7 @@ footer {
         font-size: .9em;
     }
     .devices-navbar-column p {
-        font-size: .7em;
+        /* font-size: .7em; */
     }
     /* nav bottom */
     .n-b-nav p {
@@ -2192,7 +2212,7 @@ footer {
     .p-m-b-img {
         width: 350px;
     }
-    .p-m-b-text h2 {
+    .p-m-b-text {
         margin-top: 20rem;
     }
     /* 13.company navbar */
@@ -2242,18 +2262,12 @@ footer {
 }
 
 @media only screen and (max-width: 280px) {
-    .weekly-text-1 {
-        font-size: .8em;
-    }
     .w-r-img {
         width: 16rem;
         height: 19rem;
     }
     .w-discount:nth-child(2) {
         top: -8px;
-    }
-    .weekly-h3-1 {
-        font-size: 2em;
     }
     .devices-navbar {
         gap: 1rem;
@@ -2263,6 +2277,9 @@ footer {
     }
     .p-i-btn {
         width: 240px;
+    }
+    .p-m-b-img {
+        width: 275px;
     }
     /* 13 */
     .c-v-img {

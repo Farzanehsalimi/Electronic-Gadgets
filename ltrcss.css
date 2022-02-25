@@ -46,6 +46,10 @@ header {
     direction: ltr;
 }
 
+footer {
+    direction: ltr;
+}
+
 @media only screen and (max-width: 1028px) {
     .aside-h {
         margin-top: 6rem;
